@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>限時優惠！搶購獨家服飾</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f9f9f9;
+            margin: 0;
+            padding: 0;
+            color: #333;
+        }
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        .header {
+            text-align: center;
+            padding: 50px 0;
+        }
+        h1 {
+            font-size: 36px;
+            color: #ff6f61;
+        }
+        .subheading {
+            font-size: 20px;
+            color: #555;
+            margin-top: 10px;
+        }
+        .product {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+            margin-top: 40px;
+        }
+        .product-item {
+            background-color: #fff;
+            border-radius: 8px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+            width: 280px;
+            margin-bottom: 40px;
+            overflow: hidden;
+            text-align: center;
+        }
+        .product-img {
+            width: 100%;
+            height: 300px;
+            object-fit: cover;
+        }
+        .product-info {
+            padding: 20px;
+        }
+        .product-name {
+            font-size: 22px;
+            color: #333;
+        }
+        .price {
+            font-size: 18px;
+            color: #ff6f61;
+            margin-top: 10px;
+        }
+        .discount {
+            text-decoration: line-through;
+            color: #999;
+        }
+        .cta-button {
+            background-color: #ff6f61;
+            color: white;
+            padding: 12px 20px;
+            font-size: 16px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            margin-top: 20px;
+            transition: background-color 0.3s ease;
+        }
+        .cta-button:hover {
+            background-color: #e55c52;
+        }
+        .limited-offer {
+            background-color: #ff6f61;
+            color: white;
+            padding: 15px;
+            font-size: 18px;
+            border-radius: 4px;
+            text-align: center;
+            margin-top: 40px;
+        }
+        .footer {
+            text-align: center;
+            margin-top: 60px;
+            font-size: 14px;
+            color: #777;
+        }
+        .footer a {
+            color: #ff6f61;
+            text-decoration: none;
+        }
+        .testimonials {
+            margin-top: 60px;
+            text-align: center;
+        }
+        .testimonial {
+            background-color: #fff;
+            padding: 20px;
+            margin: 15px auto;
+            width: 80%;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            border-radius: 8px;
+        }
+        .testimonial p {
+            font-size: 18px;
+            color: #555;
+        }
+        .testimonial .customer {
+            font-size: 16px;
+            color: #ff6f61;
+            margin-top: 10px;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <!-- Header Section -->
+        <div class="header">
+            <h1>限時優惠！搶購獨家服飾</h1>
+            <p class="subheading">掌握潮流，搶先穿上最新時尚！</p>
+        </div>
+
+        <!-- Product Section -->
+        <div class="product">
+            <!-- Product Item 1 -->
+            <div class="product-item">
+                <img src="https://via.placeholder.com/280x300" alt="時尚洋裝" class="product-img">
+                <div class="product-info">
+                    <h2 class="product-name">經典時尚洋裝</h2>
+                    <p class="price"><span class="discount">$1200</span> $799</p>
+                    <button class="cta-button">立即購買</button>
+                </div>
+            </div>
+            <!-- Product Item 2 -->
+            <div class="product-item">
+                <img src="https://via.placeholder.com/280x300" alt="休閒襯衫" class="product-img">
+                <div class="product-info">
+                    <h2 class="product-name">高級休閒襯衫</h2>
+                    <p class="price"><span class="discount">$950</span> $599</p>
+                    <button class="cta-button">立即購買</button>
+                </div>
+            </div>
+            <!-- Product Item 3 -->
+            <div class="product-item">
+                <img src="https://via.placeholder.com/280x300" alt="運動鞋" class="product-img">
+                <div class="product-info">
+                    <h2 class="product-name">運動時尚跑鞋</h2>
+                    <p class="price"><span class="discount">$1400</span> $999</p>
+                    <button class="cta-button">立即購買</button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Limited Time Offer Section -->
+        <div class="limited-offer">
+            <h2>限時折扣！剩下 48 小時，趕快搶購！</h2>
+            <p>把握最後機會，錯過今天將不再有這樣的優惠！</p>
+        </div>
+
+        <!-- Testimonials Section -->
+        <div class="testimonials">
+            <div class="testimonial">
+                <p>"這件洋裝完全符合我的預期！質感極佳，穿上後讓我感覺非常自信！"</p>
+                <div class="customer">- 張小姐</div>
+            </div>
+            <div class="testimonial">
+                <p>"運動鞋穿起來非常舒適，長時間走路也不會腳痛，超級推薦！"</p>
+                <div class="customer">- 王先生</div>
+            </div>
+        </div>
+
+        <!-- Footer Section -->
+        <div class="footer">
+            <p>我們尊重您的隱私，您的資料只會用於提供更好的購物體驗。</p>
+            <p><a href="#">隱私政策</a> | <a href="#">常見問題</a></p>
+        </div>
+    </div>
+
+</body>
+</html>
