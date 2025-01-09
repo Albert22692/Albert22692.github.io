@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>線上花店 - 為您的生活增添色彩</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f8f9fa;
+            color: #333;
+            margin: 0;
+            padding: 0;
+        }
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #fff;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+        h1, h2 {
+            text-align: center;
+            color: #FF69B4;
+        }
+        .hero-image {
+            width: 100%;
+            height: auto;
+            border-radius: 5px;
+        }
+        .cta-button {
+            display: block;
+            background-color: #FF69B4;
+            color: #fff;
+            padding: 15px;
+            text-align: center;
+            font-size: 18px;
+            border-radius: 5px;
+            text-decoration: none;
+            margin: 20px auto;
+            width: 200px;
+            transition: background-color 0.3s ease;
+        }
+        .cta-button:hover {
+            background-color: #e55b98;
+        }
+        .features, .reviews, .contact {
+            margin-top: 30px;
+        }
+        .feature {
+            display: flex;
+            align-items: center;
+            margin-bottom: 20px;
+        }
+        .feature img {
+            width: 80px;
+            height: 80px;
+            margin-right: 20px;
+        }
+        .reviews p {
+            font-size: 16px;
+            color: #555;
+            margin: 10px 0;
+        }
+        .form-container input, .form-container textarea {
+            width: 100%;
+            padding: 12px;
+            margin-bottom: 10px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+        }
+        .form-container input[type="submit"] {
+            background-color: #FF69B4;
+            color: #fff;
+            cursor: pointer;
+        }
+        .form-container input[type="submit"]:hover {
+            background-color: #e55b98;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <h1>線上花店 - 為您的生活增添色彩</h1>
+        <img src="flower-hero.jpg" alt="美麗花卉" class="hero-image">
+
+        <h2>立即選購，享受首次購物專屬折扣！</h2>
+        <a href="#contact" class="cta-button">現在訂購</a>
+
+        <div class="features">
+            <h2>為什麼選擇我們的花店？</h2>
+            <div class="feature">
+                <img src="fresh-flowers.jpg" alt="新鮮花卉">
+                <p>新鮮直送：所有花卉都來自當地農場，確保品質與新鮮。</p>
+            </div>
+            <div class="feature">
+                <img src="custom-bouquet.jpg" alt="客製化花束">
+                <p>客製化花束：根據您的需求設計獨一無二的花束。</p>
+            </div>
+            <div class="feature">
+                <img src="fast-delivery.jpg" alt="快速配送">
+                <p>快速配送：當天送達，讓您的驚喜不等待。</p>
+            </div>
+        </div>
+
+        <div class="reviews">
+            <h2>顧客的聲音</h2>
+            <p>"收到的花束非常漂亮，新鮮又香！我非常滿意他們的服務。" - 張小姐</p>
+            <p>"送花的速度非常快，服務人員也很友善！非常推薦！" - 李先生</p>
+        </div>
+
+        <div class="contact" id="contact">
+            <h2>快速聯繫我們</h2>
+            <div class="form-container">
+                <form action="submit_order.php" method="POST">
+                    <label for="name">姓名</label>
+                    <input type="text" id="name" name="name" placeholder="輸入您的姓名" required>
+                    
+                    <label for="email">電子郵件</label>
+                    <input type="email" id="email" name="email" placeholder="輸入您的電子郵件" required>
+                    
+                    <label for="message">訂購需求或問題</label>
+                    <textarea id="message" name="message" rows="4" placeholder="請輸入您的需求或問題" required></textarea>
+                    
+                    <input type="submit" value="立即提交">
+                </form>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>
