@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>線上花店 - 加入名單，獲得專屬優惠</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f9f9f9;
+            color: #333;
+            margin: 0;
+            padding: 0;
+        }
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #fff;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+        h1, h2 {
+            text-align: center;
+            color: #FF69B4;
+        }
+        .cta-button {
+            display: inline-block;
+            background-color: #FF69B4;
+            color: #fff;
+            padding: 15px 30px;
+            text-align: center;
+            font-size: 18px;
+            border-radius: 5px;
+            text-decoration: none;
+            margin-top: 20px;
+            transition: background-color 0.3s ease;
+        }
+        .cta-button:hover {
+            background-color: #e55b98;
+        }
+        .form-container {
+            margin-top: 20px;
+        }
+        .form-container input, .form-container select {
+            width: 100%;
+            padding: 12px;
+            margin-bottom: 10px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            font-size: 16px;
+        }
+        .form-container input[type="submit"] {
+            background-color: #FF69B4;
+            color: #fff;
+            cursor: pointer;
+        }
+        .form-container input[type="submit"]:hover {
+            background-color: #e55b98;
+        }
+        .social-proof {
+            margin-top: 40px;
+            text-align: center;
+        }
+        .social-proof p {
+            font-size: 16px;
+            color: #555;
+        }
+        .privacy-policy {
+            text-align: center;
+            margin-top: 20px;
+            font-size: 14px;
+        }
+        .privacy-policy a {
+            color: #FF69B4;
+            text-decoration: none;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <h1>加入我們的花卉社群，獲得專屬優惠與花卉知識</h1>
+        <h2>成為我們的會員，立即獲得首次購物折扣</h2>
+        
+        <p>我們為您提供最美的花卉與植物，並透過定期更新的電子報，讓您獲得獨家的折扣、花卉護理建議以及節慶花卉推薦。</p>
+        
+        <div class="form-container">
+            <form action="submit_form.php" method="POST">
+                <label for="name">姓名</label>
+                <input type="text" id="name" name="name" placeholder="輸入您的姓名" required>
+                
+                <label for="email">電子郵件</label>
+                <input type="email" id="email" name="email" placeholder="輸入您的電子郵件" required>
+                
+                <label for="birthday">生日（可選）</label>
+                <input type="date" id="birthday" name="birthday">
+                
+                <label for="favorite_flower">最喜愛的花卉（可選）</label>
+                <input type="text" id="favorite_flower" name="favorite_flower" placeholder="例如：玫瑰、百合等">
+                
+                <label for="interest">服務興趣</label>
+                <select id="interest" name="interest" required>
+                    <option value="floral_arrangements">花卉安排</option>
+                    <option value="delivery">送花服務</option>
+                    <option value="both">花卉與送花服務</option>
+                </select>
+                
+                <input type="submit" value="立即加入，獲得折扣">
+            </form>
+        </div>
+
+        <div class="social-proof">
+            <p>我們的顧客大多表示，選擇我們的花卉服務讓他們的生活更加充滿色彩！超過1000+顧客選擇我們的服務。</p>
+        </div>
+
+        <div class="privacy-policy">
+            <p>您的隱私對我們非常重要。您的個人資訊將僅用於我們的市場行銷活動，詳情請參見<a href="/privacy-policy">隱私政策</a>。</p>
+        </div>
+    </div>
+
+</body>
+</html>
